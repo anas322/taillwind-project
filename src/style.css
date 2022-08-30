@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#change-color li a img:hover {
+  filter: invert(29%) sepia(62%) saturate(1785%) hue-rotate(353deg)
+    brightness(96%) contrast(101%);
+}
+
+#logo-footer {
+  filter: invert(99%) sepia(100%) saturate(0%) hue-rotate(278deg)
+    brightness(102%) contrast(101%);
+}
