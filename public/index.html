@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>tailwind</title>
 
         <!-- tailwind css -->
         <link rel="stylesheet" href="style.css">
@@ -14,7 +14,7 @@
     <body>
         <div class="md:container mx-auto px-10 md:px-5 ">
             <!-- Nav bar -->
-            <nav class="flex justify-between items-center py-8">
+            <nav class="flex justify-between items-center py-8 ">
                 <!-- Logo -->
                 <div>
                     <img src="./images/logo.svg" alt="manage log for the website">
@@ -32,29 +32,32 @@
                 <!-- Get started button -->
                 <div>
                     <button
-                        class="hidden lg:inline-block py-2 px-4 hover:shadow transition-all hover:scale-105 text-white font-semibold text-sm bg-orange-600 rounded-full ">Get
+                        class="hidden lg:inline-block py-3 px-6 hover:shadow transition-all hover:scale-105 text-white font-semibold text-sm bg-orange-600 rounded-full ">Get
                         Started</button>
                 </div>
 
                 <!-- Toggle button  -->
                 <div class="lg:hidden">
-                    <img src="./images/icon-hamburger.svg" class=" hover:cursor-pointer w-8 h-auto" alt="collapse icon">
+                    <img id="toggle-button" src="./images/icon-hamburger.svg" class=" hover:cursor-pointer w-8 h-auto"
+                        alt="collapse icon">
                 </div>
             </nav>
 
             <main>
                 <!-- header section  -->
                 <section id="#">
-                    <div class="flex md:flex-row flex-col-reverse md:items-center gap-8 my-16">
+                    <div class="flex md:flex-row flex-col-reverse md:items-center gap-8 mb-20 min-h-screen">
 
                         <!-- Item  -->
                         <div class="basis-2/4   ">
-                            <h1 class="text-6xl text-gray-900 lg:text-7xl font-bold mb-6 text-center md:text-left">Bring
+                            <h1 class="text-6xl text-gray-900 lg:text-7xl font-bold mb-12 text-center md:text-left ">
+                                Bring
                                 everyone
                                 together to build
                                 better
                                 products.</h1>
-                            <p class="text-gray-400 text-center md:text-left md:w-3/4 w-3/4 mx-auto md:mx-0 ">Manage
+                            <p class="text-gray-400 text-lg text-center md:text-left md:w-3/4 w-3/4 mx-auto md:mx-0 ">
+                                Manage
                                 makes
                                 it simple
                                 for software
@@ -68,7 +71,7 @@
 
                             <div class="text-center md:text-left">
                                 <button
-                                    class="  hover:bg-orange-400 transition-all hover:shadow-lg hover:scale-105 py-3 px-6 text-white font-semibold text-sm bg-orange-600 rounded-full mt-10">Get
+                                    class="  hover:bg-orange-400 transition-all hover:shadow-lg hover:scale-105 py-4 px-8 text-lg text-white font-semibold  bg-orange-600 rounded-full mt-11">Get
                                     Started</button>
                             </div>
                         </div>
@@ -82,12 +85,13 @@
 
                 <!-- Features section  -->
                 <section id="#">
-                    <div class="flex md:flex-row flex-col gap-8 my-16">
+                    <div class="flex lg:flex-row flex-col  gap-20 mb-40">
                         <!-- Left Item  -->
-                        <div class="">
-                            <h1 class="text-5xl text-gray-900 lg:text-6xl font-bold mb-6 text-center md:text-left">
-                                what's different about manage?</h1>
-                            <p class="text-gray-400 text-center md:text-left md:w-3/4 w-3/4 mx-auto md:mx-0">Lorem ipsum
+                        <div>
+                            <h1 class="text-5xl text-gray-900 lg:text-6xl font-bold mb-6 text-center lg:text-left">
+                                What's different about manage?</h1>
+                            <p class="text-gray-400 text-lg text-center lg:text-left lg:w-3/4 w-3/4 mx-auto lg:mx-0">
+                                Lorem ipsum
                                 dolor sit amet consectetur adipisicing elit. Totam odit ipsa perferendis
                                 similique tenetur, dolorem tempore quibusdam ipsam qui earum hic delectus atque magni
                                 corporis! Voluptatum architecto voluptates quae suscipit!</p>
@@ -95,70 +99,80 @@
 
                         <!-- right Item  -->
                         <div class="flex flex-col gap-y-5">
-                            <div class="flex">
-                                <div>
+                            <div class="flex items-start">
+                                <div class="mt-2">
                                     <span
-                                        class="px-6 py-2 mr-8 text-white font-semibold bg-orange-600 rounded-full">01</span>
+                                        class="px-8 py-3 text-lg mr-8 text-white font-semibold bg-orange-600 rounded-full">01</span>
                                 </div>
 
                                 <div>
 
-                                    <h3 class="text-gray-900 text-lg font-bold mb-5">Track company-wide
+                                    <h3 class="text-gray-900 text-2xl font-bold mb-7">Track company-wide
                                         pregress</h3>
-                                    <p class="text-gray-400">
+                                    <p class="text-gray-400 text-lg ">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur fuga,
                                         quas
                                         esse dicta quis, voluptatem sint veritatis mollitia in deserunt itaque
                                         laborum
                                         illum amet perferendis tempora accusantium temporibus rem et!
+                                        illum amet perferendis tempora accusantium temporibus rem et!
+
                                     </p>
                                 </div>
                             </div>
 
-                            <div class="flex">
-                                <div>
+                            <div class="flex items-start">
+                                <div class="mt-2">
                                     <span
-                                        class="px-6 py-2 mr-8 text-white font-semibold bg-orange-600 rounded-full">01</span>
+                                        class="px-8 py-3 text-lg mr-8 text-white font-semibold bg-orange-600 rounded-full">01</span>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-gray-900 text-lg font-bold mb-5">Track company-wide
+
+                                    <h3 class="text-gray-900 text-2xl font-bold mb-7">Track company-wide
                                         pregress</h3>
-                                    <p class="text-gray-400">
+                                    <p class="text-gray-400 text-lg ">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur fuga,
                                         quas
                                         esse dicta quis, voluptatem sint veritatis mollitia in deserunt itaque
                                         laborum
                                         illum amet perferendis tempora accusantium temporibus rem et!
+                                        illum amet perferendis tempora accusantium temporibus rem et!
+
                                     </p>
                                 </div>
                             </div>
 
-                            <div class="flex">
-                                <div>
+                            <div class="flex items-start">
+                                <div class="mt-2">
                                     <span
-                                        class="px-6 py-2 mr-8 text-white font-semibold bg-orange-600 rounded-full">01</span>
+                                        class="px-8 py-3 text-lg mr-8 text-white font-semibold bg-orange-600 rounded-full">01</span>
                                 </div>
 
                                 <div>
-                                    <h3 class="text-gray-900 text-lg font-bold mb-5">Track company-wide
+
+                                    <h3 class="text-gray-900 text-2xl font-bold mb-7">Track company-wide
                                         pregress</h3>
-                                    <p class="text-gray-400">
+                                    <p class="text-gray-400 text-lg ">
                                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur fuga,
                                         quas
                                         esse dicta quis, voluptatem sint veritatis mollitia in deserunt itaque
                                         laborum
                                         illum amet perferendis tempora accusantium temporibus rem et!
+                                        illum amet perferendis tempora accusantium temporibus rem et!
+
                                     </p>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </section>
 
                 <!-- testimonials  -->
                 <section id="#">
-                    <div class="my-16">
+                    <div class="mb-20">
                         <h3 class="text-5xl lg:text-6xl text-gray-900  font-bold mb-40 text-center ">What they've
                             said
                         </h3>
@@ -281,7 +295,7 @@
         </section>
         </main>
 
-
+        <script src="script.js"></script>
 
     </body>
 
